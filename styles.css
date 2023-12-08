@@ -7,7 +7,6 @@ body {
     color: white; /* White text color */
     font-family: 'Radio Canada', sans-serif; /* Font family */
     background-image: url(paper.PNG);
-    background-repeat: no-repeat;
     background-size: 100%;
 }
 

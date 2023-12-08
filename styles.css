@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Slackside+One');
+@import url('https://fonts.googleapis.com/css?family=Radio+Canada');
+
+
+body {
+    background-color: #ff6a4a; /* Salmon color background */
+    color: white; /* White text color */
+    font-family: 'Radio Canada', sans-serif; /* Font family */
+    background-image: url(paper.PNG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 106, 74, 0.7); /* Adjust the alpha for transparency */
+    z-index: -1;
+}
+
+
+.profile-image {
+    width: 18%; /* Adjust to your preference */
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 3.5rem; /* Adjust to your preference */
+}
+
+p.caption {
+    font-size: 1.5rem;
+}
+
+
+.card {
+    height: 240px;
+    width: 240px;
+    border: none;
+    color: #000;
+    font-family: 'Slackside One' /* Black text color for card titles */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-card {
+    background-image: linear-gradient(to bottom, #C41913, #E11616); /* For the 'About Me' card */
+    
+}
+
+.proj-card {
+    background-image: linear-gradient(to bottom, #C7C73E, #E0E046); /* For the 'My Projects' card*/
+}
+
+/* Customize the card for 'Contact' section */
+.contact-card {
+    background-image: linear-gradient(to bottom, #1391C7, #16A4E1); /* For the 'Contact' card */
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

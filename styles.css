@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Slackside+One');
 @import url('https://fonts.googleapis.com/css?family=Radio+Canada');
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0 auto;
+  }
 
 body {
-    background-color: #ff6a4a; /* Salmon color background */
+    line-height: 1.5;
     color: white; /* White text color */
     font-family: 'Radio Canada', sans-serif; /* Font family */
     background-image: url(paper.PNG);
@@ -20,7 +29,16 @@ body::before {
     background: rgba(255, 106, 74, 0.7); /* Adjust the alpha for transparency */
     z-index: -1;
 }
+  
 
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
 
 .profile-image {
     width: 18%; /* Adjust to your preference */
@@ -30,6 +48,17 @@ body::before {
 
 h1 {
     font-size: 3.5rem; /* Adjust to your preference */
+}
+
+
+#about {
+    text-align: center;
+    padding-bottom: 1%;
+  }
+
+a:link, a:visited, a:link:active, a:visited:active { 
+    color:#000;
+    text-decoration: none;
 }
 
 p.caption {
@@ -45,6 +74,14 @@ p.caption {
     font-family: 'Slackside One' /* Black text color for card titles */
 }
 
+.header-card {
+    width: 240px;
+    height: 10px;
+    border: none;
+    color: #000;
+    font-family: 'Slackside One' /* Black text color for card titles */
+}
+
 .card-body {
     display: flex;
     flex-direction: column;
@@ -53,17 +90,17 @@ p.caption {
 }
 
 .about-card {
-    background-image: linear-gradient(to bottom, #C41913, #E11616); /* For the 'About Me' card */
+    background-image: linear-gradient(to bottom, hsl(0, 100%, 42%), hsl(0, 100%, 50%)); /* For the 'About Me' card */
     
 }
 
 .proj-card {
-    background-image: linear-gradient(to bottom, #C7C73E, #E0E046); /* For the 'My Projects' card*/
+    background-image: linear-gradient(to bottom, hsl(45, 100%, 46%), hsl(45, 100%, 50%)); /* For the 'My Projects' card*/
 }
 
 /* Customize the card for 'Contact' section */
 .contact-card {
-    background-image: linear-gradient(to bottom, #1391C7, #16A4E1); /* For the 'Contact' card */
+    background-image: linear-gradient(to bottom, hsl(198, 83%, 45%), hsl(198, 83%, 50%)); /* For the 'Contact' card */
 }
 
 

@@ -103,6 +103,48 @@ p.caption {
     background-image: linear-gradient(to bottom, hsl(198, 83%, 45%), hsl(198, 83%, 50%)); /* For the 'Contact' card */
 }
 
+.bi {
+    margin-right: 0px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+a.icon-link {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+ /* Horizontally center the items */
+    text-decoration: none;
+    color: #fff /* Optional: Removes underline from the link */
+  }
+
+  a.icon-link:visited, a.icon-link:link:active, a.icon-link:visited:active {
+    color: #fff;
+  }
+  
+
+p.linkedin, p.github, p.email {
+    font-size: 1.2rem;
+    margin-left: .25rem;
+}
+
+p.github {
+    padding-right: 1.1rem;
+}
+
+p.email {
+    padding-right: 1.9rem;
+}
+
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    color:#000
+  }
+
+h5.modal-title {
+    color: #000;
+  }
+
 
 
 /* Media query for smaller screens */
@@ -111,3 +153,4 @@ p.caption {
         font-size: 2rem;
     }
 }
+

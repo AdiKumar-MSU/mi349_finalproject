@@ -63,7 +63,7 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col">
-                <main class="bodyarea">
+                <div class="bodyarea">
                     <div class="row">
                         <a href="https://www.linkedin.com/in/aditya-kumar-788ba2262/" class="icon-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -89,17 +89,19 @@
                               </svg>
                             <p class="email">Email Me</p>
                         </a>
-                            </div>
-                        </div>
                     </div>
-
-                    <div class="row">
-                        <a href="Adi Kumar Resume - Copy.pdf" download="Adi Kumar Resume">
-                            <button type="button" class="btn btn-success btn-secondary btn-lg mt-3">Download my Resume</button>
-                        </a>
-                    </div>
-                    
-                </main>
+                </div>
+                <div class="row align-items-center justify-content-center">
+                            <button type="button" class="btn btn-success btn-secondary btn-lg mt-3" onclick="downloadfile()">
+                                Download my Resume
+                            </button>
+                            <script>
+                                function downloadFile() {
+                                    window.location.href = 'Adi Kumar Resume-Copy.pdf';
+                                }
+                            </script>
+                                
+                </div>
             </div>
         </div>
     </div>
